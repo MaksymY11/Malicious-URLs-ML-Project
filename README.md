@@ -48,7 +48,7 @@ After downloading, place the file into: Malicious-URLs-ML-Project\data\raw
 
 ## 3. Setup Instructions
 
-### 1. Create python environment
+### 1. Create python environment (optional)
 ```bash
 python -m venv venv
 source venv/bin/activate     # Mac/Linux

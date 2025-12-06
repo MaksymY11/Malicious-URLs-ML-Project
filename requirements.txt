@@ -1,6 +1,9 @@
 numpy
+tld
+tldextract
 pandas
 scikit-learn
 xgboost
 matplotlib
 seaborn
+kagglehub # For downloading dataset from Kaggle
