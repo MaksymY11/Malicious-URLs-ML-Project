@@ -44,8 +44,6 @@ pip install -r requirements.txt
 
 ## 3. How to Run Project
 
-### 1. Preprocessing
-
 Open and run: `models.ipynb`
 
 This notebook will:
