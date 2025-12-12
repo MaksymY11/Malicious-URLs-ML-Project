@@ -13,19 +13,8 @@ Malicious-URLs-ML-Project/
 │   │   └── urls_original.csv       (dataset downloaded from kaggle)
 │
 ├── notebooks/
-│   └── models.ipynb                (final submission file with our models combined(not sure if we will keep them all in one or separate))
+│   └── models.ipynb                (final submission file with preprocessing and models)
 │
-├── results/
-│   ├── metrics/
-│   │   └── results_table.csv       (optional output from models.ipynb)
-│   └── figures/
-│       ├── logreg_confusion.png
-│       ├── svm_confusion.png
-│       └── xgboost_confusion.png
-│
-└── report/
-    ├── cs549_final_report.pdf
-    └── references.bib              (optional if using LaTeX)
 ```
 
 ## 2. Dataset
@@ -37,11 +26,11 @@ We use the **Malicious URLs Dataset** from Kaggle.
 After downloading, place the file into: Malicious-URLs-ML-Project\data\raw
 
 > Note: The raw dataset is not modified.  
-> All transformations occur in `01_preprocessing.ipynb` and outputs are saved into `data/processed/`.
+> All transformations occur in `models.ipynb`
 
 ## 3. Setup Instructions
 
-### 1. Create python environment (optional)
+### 1. Create Python environment (optional)
 ```bash
 python -m venv venv
 source venv/bin/activate     # Mac/Linux
@@ -57,12 +46,13 @@ pip install -r requirements.txt
 
 ### 1. Preprocessing
 
-Open and run: `notebooks/01_preprocessing.ipynb`
+Open and run: `models.ipynb`
 
 This notebook will:
 -Load the raw dataset
 -Clean and preprocess the URLs
 -Extract lexical/structural features
--Save the processed dataset to: `data/processed/features.csv`
-
-### 2. Training and Evaluating Models
+-Split the dataset into classes used for training and testing.
+-Address class imbalance and scaling
+-Train and evaluate the models
+-Output graphs and charts for visualization
