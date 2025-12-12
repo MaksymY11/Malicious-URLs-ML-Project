@@ -42,7 +42,7 @@ venv\Scripts\activate        # Windows
 pip install -r requirements.txt
 ```
 
-## 3. How to Run Project
+## 4. How to Run Project
 
 Open and run: `models.ipynb`
 
