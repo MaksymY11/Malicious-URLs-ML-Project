@@ -13,7 +13,7 @@ Malicious-URLs-ML-Project/
 │   │   └── urls_original.csv       (dataset downloaded from kaggle)
 │
 ├── notebooks/
-│   └── models.ipynb                (final submission file with preprocessing and models)
+│   └── models.ipynb
 │
 ```
 
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ## 4. How to Run Project
 
 Open and run: `models.ipynb`
-
+```
 This notebook will:
 -Load the raw dataset
 -Clean and preprocess the URLs
@@ -54,3 +54,4 @@ This notebook will:
 -Address class imbalance and scaling
 -Train and evaluate the models
 -Output graphs and charts for visualization
+```
